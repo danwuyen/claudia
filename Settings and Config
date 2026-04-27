@@ -1,0 +1,27 @@
+Explicit Parameter Settings, Configurations for STM32 IOC
+Here, only required changes are stated. All other parameters and config. are left the same. 
+
+NVIC ]
+NVIC Interrupt Table )
+                        EXTI lin[15:10] interrupts -> Enabled
+
+TIM1 ]
+Mode )
+                        Clock Source -> Internal Clock
+
+Parameter Settings )
+                        Prescaler -> 79
+                        Counter Mode -> Up
+                        Counter Period -> 65535
+
+TIM2 ]
+Mode )
+                        Clock Source -> Internal Clock
+                        Channel1 -> PWM Generation CH1
+                        Channel2 -> PWM Generation CH2
+
+Parameter Settings )
+                        Prescaler -> 79
+                        Counter Mode -> Up
+                        Counter Period -> 999
+                        auto-reload preload -> Enable
